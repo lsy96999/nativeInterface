@@ -1,0 +1,6 @@
+server:
+  port: 7070
+
+logging:
+  level:
+    yun.seong.lim.nativeinterfacebck.nativeinterfacebck: DEBUG
