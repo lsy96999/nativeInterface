@@ -17,9 +17,9 @@ class NIWebViewActivity : AppCompatActivity() {
         webView.apply {
             webViewClient = WebViewClient()
             webChromeClient = WebChromeClient()
+            settings.userAgentString = settings.userAgentString+" NiAos"
             settings.javaScriptEnabled = true
-            settings.userAgentString = settings.userAgentString+"NiAos"
-            addJavascriptInterface(NiWebViewBridge(webView), " NiAos")
+            addJavascriptInterface(NiWebViewBridge(webView), "NiAos")
             loadUrl("https://www.google.com")
         }
     }
